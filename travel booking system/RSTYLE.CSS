@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: oblique;
+  
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(130, 106, 251);
+}
+body:before {
+  content: '';
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url('fahrul-azmi-5LEkpdrv1Tg-unsplash.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(8px);
+  filter: '';
+}
+.container {
+    position: absolute;
+    max-width: 700px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform:  translate(-50%,-50%);
+    background: transparent;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  .container Header {
+    text-align: center;
+    height: 55px;
+    padding: 13px 0px 0px 0px;
+    width: 100%;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    border: none;
+    transition: all 0.2s ease;
+    
+  }
+  Header  {
+    width: 80%;
+    height: 7vh;
+    /* border: 1px solid #000; */
+    margin: auto;
+  }
+  .container .form {
+    margin-top: 20px;
+  }
+  .form .input-box {
+    width: 100%;
+    margin-top: 1px;
+  
+  }
+  .input-box label {
+    color: #000;
+    margin-top: 1px;
+  
+  }
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #1b1818;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .form .gender-box {
+    margin-top: 20px;
+  }
+  .gender-box h3 {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .form .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: rgb(130, 106, 251);
+  }
+  .form :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  .gender label {
+    color: #000;
+  }
+  .address :where(input, .select-box) {
+    margin-top: 15px;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+  }
+  .form button {
+    height: 55px;
+    margin-left: 39%;
+    width: 20%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 20px 20px 20px 20px;
+    background: rgb(130, 106, 251);
+  }
+  .form button:hover {
+    background: rgb(88, 56, 250);
+  }
+  

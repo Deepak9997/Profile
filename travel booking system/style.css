@@ -1,0 +1,613 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cambria';
+    font-style: oblique;
+    background: rgb(167, 203, 213);
+}
+header{
+    width: 80%;
+    height: 105vh;
+    /*border: 1px solid #000;*/
+    margin: auto;
+}
+header nav{
+    width: 95%;
+    height: 7%;
+    /*border: 1px solid #000;*/
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav h4{
+  font-size: 2.5rem;
+  color: rgb(84, 158, 195);
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    color: #ffffff;
+}
+header nav ul li{
+   padding: 3px 15px;
+}
+header nav ul li:nth-last-child(1){
+  background: #000;
+  border-radius: 20px 20px 20px 20px;
+  padding: 4px 6px;
+ }
+ header nav ul li:nth-last-child(1) a{
+   color: #fff;
+ }
+
+header nav ul li a{
+    text-decoration: none;
+    color: #121213;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .3s linear;
+    margin-top: 6px;
+ }
+ header nav ul li a:hover {
+    color: rgb(84, 158, 195);
+ }
+
+header nav .bi-three-dots{
+    display: unset;
+    margin-right: 10px;
+
+ }
+ header .content{
+    position: relative;
+    width: 100%;
+    height: 93%;
+    /*border: 1px solid #000;*/
+
+ }
+ header .content::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 83%;
+    /*border: 1px solid #000;*/
+    background: url('top-view-travel-concept-with-plane.jpg')center/cover;
+    border-radius: 10px;
+    z-index: -1;
+ }
+ header .content .cont_x{
+    width: 500px;
+    height: auto;
+    color: #fff;
+    padding: 30px;
+ }
+ header .content .cont_x h1{
+    line-height: 40px;
+    font-weight: 800;
+    color: rgb(51, 47, 47);
+    /*border: 1px solid #000;*/
+ }
+ header .content .cont_x h1 p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 47, 47);
+ }
+
+ header .content .cont_x button{
+     margin-top: 20px;
+     padding: 10px 20px;
+     border-radius: 20px;
+     border: 2px solid #121213;
+     background: #000;
+     color: #fff;
+     outline: none;
+     cursor: pointer;
+     transition: .3s linear;
+ }
+ header .content .cont_x button:hover{
+    background: rgb(66, 195, 246);
+    border: 2px solid rgb(66, 195, 246);
+ }
+ header .trip_bx{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    /*border: 1px solid #000;*/
+ }
+ header .trip_bx .search_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 25px rgb(114, 114, 114);
+    padding: 10px 20px;
+    z-index: 1;
+ }
+ header .trip_bx .search_box::before{
+  content: '';
+  position: absolute;
+  backdrop-filter: blur(0px);
+  z-index: -1;
+}
+ header .trip_bx .search_box .card{
+    width: 200px;
+    height: 100%;
+    transition: .5s linear;
+    /*border: 1px solid #121213;*/
+ }
+ header .trip_bx .search_box .card h4{
+  font-size: 15px;
+  margin: 0;
+  font-weight: 700;
+}
+header .trip_bx .search_box .card h4 .bi{
+   position: absolute;
+   font-size: 15px;
+   margin: 2px 0px  0px 5px;
+   transition: .3s linear;
+}
+header .trip_bx .search_box .card input{
+  margin-top: 3px;
+  padding: 5px 0px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+}
+
+header .trip_bx .search_box input[type="button"]{
+  
+    background: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transform: .3s linear;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+header .trip_bx .search_box input[type="button"]:hover{
+   background:rgb(66, 195, 246);
+}
+header .trip_bx .travel_bx{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  top: 40px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0px 20px 25px -10px;
+}
+header .trip_bx .travel_bx::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: rgb(241, 241, 241, .7);
+  backdrop-filter: blur(0px);
+  z-index: -1;
+}
+header .trip_bx .travel_bx h4{
+  margin: 0;
+  padding: 60px 0px 15px 1%;
+}
+header .trip_bx .travel_bx .cards{
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+  /*border: 1px solid #000;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*overflow: auto;*/
+}
+header .trip_bx .travel_bx .cards .card{
+  width: 200px;
+  height: 180px;
+  /*border: 1px solid #000;*/
+  max-width: 220px;
+  margin-right: 10px;
+}
+header .trip_bx .travel_bx .cards .card h3{
+  margin: 0px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}header .trip_bx .travel_bx .cards .card img{
+  width: 100%;
+  height: 62%;
+}
+header .trip_bx .travel_bx .cards .card .button_box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+header .trip_bx .travel_bx .cards .card .button_box a{
+  text-decoration: none;
+  background: black;
+  color: #fff;
+  border-radius: 30px;
+  padding: 6px 20px;
+   font-size: 11px;
+   transition: .3s linear;
+}
+header .trip_bx .travel_bx .cards .card .button_box a:hover{
+  background: rgb(66, 195, 246);
+}
+header .trip_bx .travel_bx .cards .card .button_box h5{
+   font-size: 11px;
+   font-weight: 600;
+   margin-left: 4px;
+   margin-top: 5px;
+   line-height: 10px;
+}
+ header .trip_bx .travel_bx .cards .card .button_box h5 span{
+  font-size: 12px;
+  font-weight: 700px;
+}
+
+.Offers{
+  width: 60%;
+  height: auto;
+   /*border: 1px solid #000;*/
+  margin: auto;
+  margin-top: 80px;
+  transition: .5s linear;
+}
+.Offers h1{
+   font-weight: 600;
+   text-align: center;
+   margin: 0;
+}
+.Offers p{
+   font-weight: 500;
+   text-align: center;
+   margin: 0;
+}
+.Offers .cards{
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   width: 110%;
+   justify-content: space-between;
+   display: flex;
+   flex-wrap: wrap;
+   /*border: 1px solid #000;*/
+}
+.Offers .cards .card{
+  position: relative;
+  width: 200px;
+  height: 350px;
+   /*border: 1px solid #000;*/
+}
+.Offers .cards .card h3{
+   width: 140px;
+   padding: 6px 0px;
+   background: rgb(165, 243, 165);
+   border-radius: 20px;
+   font-size: 12px;
+   display: grid;
+   place-items: center;
+   margin: auto;
+}
+.Offers .cards .card .img_text{
+   position: relative;
+   width: 100%;
+   height: 250px;
+   margin-top: 5px;
+}
+.Offers .cards .card .img_text img{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px 10px 0px 0px;
+}
+.Offers .cards .card .img_text h4{
+  position: absolute;
+  font-size: 10px;
+  padding: 10px 15px;
+  margin: 0;
+  bottom: 0;
+  color: white;
+  z-index: 2;
+}
+.Offers .cards .card .img_text h4::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255, .1);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+ }
+.Offers .cards .card .content_box{
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*border: 1px solid #000*/
+  padding: 5px 0px;
+  border-radius: 0px 0px 5px 5px;
+}
+.Offers .cards .card .content_box .price{
+  font-size: 12px;
+  font-weight: 700px;
+}
+.Offers .cards .card .content_box .price .chat{
+  font-size: 12px;
+  font-weight: 700px;
+  display: flex;
+  align-items: center;
+}
+.Offers .cards .card .content_box .price .chat .bi-heart-fill{
+  color: rgb(250, 22, 22);
+  font-size: 13px;
+  margin-right: 10px;
+}
+.Offers .cards .card .content_box .price .chat i span{
+  color: black;
+  font-size: 12px;
+  margin-left: 3px;
+  font-style: normal;
+}
+.Offers .cards .card .content_box .price .chat .bi-chat-fill{
+  color: rgb(17, 205, 252);
+  font-size: 13px;
+  margin-right: 10px;
+}
+.Offers .cards .card .content_box .price, .days{
+  margin: 0px 8px;
+}
+.Offers .cards .card .content_box .price .inf_price{
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+.Offers .cards .card .content_box .price .inf_price a{
+  text-decoration: none;
+  color: black;
+  font-size: 11px;
+  font-weight: 700;
+  transform: .3s linear;
+  margin-right: 13px;
+}
+.Offers .cards .card .content_box .price .inf_price a:hover{
+  color: rgb(66, 195, 246);
+}
+.Offers .cards .card .content_box .price .inf_price h4{
+  margin: 0;
+  font-size: 13px;
+}
+.Offers .cards .card .content_box .days{
+  background: black;
+  color: white;
+  font-size: 8px;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.Offers .cards .card .content_box .days:hover{
+  transform: rotateX('360deg');
+}
+.destination{
+  width: 50%;
+  height: auto ;
+  /*border: 1px solid black;*/
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destination .dst_box , .img_box{
+  position: relative;
+  width: 60%;
+  height: auto;
+ /* border: 1px solid black;*/
+}
+.destination .dst_box h4{
+  margin: 0;
+}
+.destination .dst_box h4{
+  margin: 0;
+  font-size: 30px;
+  color: black;
+  line-height: 10px;
+  letter-spacing: 1px;
+}
+.destination .dst_box p{
+  font-size: 13px;
+}
+.destination .dst_box li{
+  list-style-type: none;
+  padding: 0px 0px 8px 0px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.destination .dst_box h6{
+  width: 250px;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+.destination .dst_box img{
+ width: 20%;
+ height: 80px;
+ border-radius: 10px;
+ margin-left: 14%;
+}
+
+.destination .dst_box button{
+ font-size: 12px;
+ padding: 8px 15px;
+ border-radius: 20px;
+ background: black;
+ color: white;
+ /*border: 2px solid black;*/
+ cursor: pointer;
+ transition: .3s linear;
+}
+.destination .dst_box button:hover{
+ background:  rgb(66, 195, 246);
+ /*border: 2px solid  rgb(66, 195, 246);*/
+ }
+.destination .img_box img{
+ width: 100%;
+ height: 420px;
+ border-radius: 5px;
+ }
+.destination .img_box .msg{
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 190px;
+  height: 50px;
+  background: white;
+  box-shadow: 0px 5px 20px gray;
+  display: flex;align-items: center;
+  padding: 0px 10px;
+  border-radius: 8px;
+ }
+.destination .img_box .msg:nth-child(2){
+  top: 10%;
+  left: 55%;
+ }
+.destination .img_box .msg img{
+  width: 30px;
+  height: 55%;
+ }
+.destination .img_box .msg .count{
+  margin-left: 15px;
+ }
+.destination .img_box .msg .count h4{
+  margin: 0;
+  font-size: 13px;
+  font-weight: 550;
+ }
+.destination .img_box .msg .count .bi-heart-fill{
+  color: red;
+  margin-right: 5px;
+  font-size: 11px;
+ }
+.destination .img_box .msg .count .bi-heart-fill span{
+  font-size: normal;
+  margin-left: 3px;
+  font-size: 11px;
+  color: grey;
+ }
+.destination .img_box .msg .count .bi-chat-fill{
+  color: rgb(17, 205, 252);
+  margin-right: 5px;
+  font-size: 11px;
+ }
+footer{
+  width: 100%;
+  height: auto;
+  background: rgb(167, 203, 213);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 22px 22px 0px 0px;
+ }
+ footer a{
+  margin-top: 2.5%;
+  background: #0088ad;
+  border-radius: 9px;
+  padding: 8px 29px;
+  color: #fff;
+}
+footer a :hover{
+  background: #0088ad;
+  border-radius: 20px;
+  padding: 6px 20px;
+  color: #fff;
+}
+footer h2{
+  text-align: center;
+  margin: 0;
+  margin-top: 5%;
+  line-height: 30px;
+  font-weight: 550;
+}
+footer h3{
+  text-align: center;
+  color: rgb(251, 251, 251);
+  font-weight: 550;
+}
+footer p{
+  text-align: center;
+  width: 500px;
+  font-size: 18px;
+  margin-top: 14px;
+ }
+footer .input_box{
+  box-shadow: 0px 3px 20px -1px gray;
+  border-radius: 20px;
+  margin-top: 30px;
+ }
+footer .input_box input{
+  padding: 12px 15px;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  border: 20px 0px 0px 20px;
+  background: rgba(255, 255, 255, 0.927);
+ }
+footer .input_box button{
+ padding: 12px 15px;
+ border: none;
+ outline: none;
+ font-size: 14px;
+ border-radius: 0px 20px 20px 0px;
+ background: rgb(109, 8, 8);
+ color: white;
+ cursor: pointer;
+ transition: .3s linear;
+ }
+footer .input_box button:hover{
+  background:  rgb(51, 192, 248);
+ }
+footer ul{
+  margin-top: 30px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+} 
+footer ul li{
+  text-align: center;
+  margin-right: 30px;
+  font-weight: bold;
+}
+footer ul li h5{
+  padding-top: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  max-width: 120px;
+  margin: 0;
+  line-height: 15px;
+  border-top: 1px solid #000;;
+}
+

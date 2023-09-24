@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+}
+body:before {
+   content: '';
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-image: url('fahrul-azmi-5LEkpdrv1Tg-unsplash.jpg');
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   -webkit-filter: blur(4px);
+   -moz-filter: blur(10px);
+   filter: '';
+}
+.login-page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform:  translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    padding: 8px 40px;
+    background: rgba(0,0,0,0.6);
+}
+.avtar{
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-top: 35px;
+   left: calc(50% - 40px);
+}
+form{
+    margin-top: 160px;
+}
+.login-page p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+   font-weight: bold;
+}
+.login-page h5{
+    margin: 0px;
+    padding: 9px 379px 3px 0px;
+    color: #fff;
+    font-weight: bold;
+    align-content: -between;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+.login-page input{
+    width: 100%;
+    margin: 3px 3px  20px 4px;
+}
+.login-page input[ type=email],
+.login-page form input[ type=password]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #ebebeb;
+    font-size: 15px;
+}
+.login-page input[ type=submit]{
+    height: 30px;
+    color: #000;
+    font-size: 15px;
+    background:red;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin-top: 15%;
+}
+ input[ type=scheckbox]{
+width: 100%;
+}
+
+
+@media screen and (max-width: 550px){
+    .login-page {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 500px;
+        padding: 8px 40px;
+        background: rgba(0,0,0,0.6);
+    }
+}
+@media screen and (max-width: 450px){   
+    .login-page {
+       width: 240px;
+       left: 50%;
+    }
+}
+@media screen and (max-width: 414px){   
+    .login-page {
+        width: 154px;
+        left: 31%;
+        height: 454px;
+        top: 31%;
+    }
+}
+@media screen and (max-width: 400px){   
+    .login-page {
+        width: 221px;
+        left: 39%;
+        top: 40%;
+    }
+}
+
+
+
+

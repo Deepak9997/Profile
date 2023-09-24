@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cambria';
+    font-style: oblique;
+    background: rgb(206, 205, 205);
+}
+.formbox{
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 90%;
+    margin-right: 100px;
+    height: 160vh;
+    text-align: center;
+    justify-content: center;
+    background: white;
+}
+h1{
+    margin-top: 20px;
+}
+img{
+    margin-top: 30px;
+}
+h2{
+    margin-top: 20px;
+}
+p{
+    margin-top: 30px;
+    justify-content: space-between;
+}
+p a{
+    border: 3px solid black;
+    border-radius: 10px 10px 10px 10px;
+    background: white;
+    color: black;
+    text-size-adjust: 20px;
+}
+p a:hover{
+    background: skyblue;
+}
+button{
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+button:hover{
+    background: skyblue;
+}
+
+
+@media screen and (max-width: 1400px){
+    .formbox {
+        margin-left: 64px;
+        margin-top: 30px;
+        width: 90%;
+        margin-right: 100px;
+        height: 110vh;
+        text-align: center;
+        justify-content: center;
+        background: white;
+        }
+        .formbox p{
+            font-size: 20px;
+          }
+}
+@media screen and (max-width: 1300px){
+     .formbox {
+    margin-left: 64px;
+    margin-top: 30px;
+    width: 90%;
+    margin-right: 100px;
+    height: 120vh;
+    text-align: center;
+    justify-content: center;
+    background: white;
+    }
+    .formbox p{
+        font-size: 20px;
+      }
+}
+@media screen and (max-width: 1200px){
+     .formbox {
+    margin-left: 60px;
+    margin-top: 30px;
+    width: 90%;
+    margin-right: 100px;
+    height: 125vh;
+    text-align: center;
+    justify-content: center;
+    background: white;
+   }
+   .formbox p{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1150px){   
+    .formbox {
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 80%;
+        height: 130vh;
+    }
+    .formbox p{
+        font-size: 17px;
+      }
+}
+@media screen and (max-width: 1100px){   
+    .formbox {
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 80%;
+        height: 137vh;
+    }
+    .formbox p{
+        font-size: 15px;
+      }
+}
+@media screen and (max-width: 1050px)
+ {
+   .formbox {
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 80%;
+    height: 140vh;
+ }
+ .formbox p{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 950px)
+    { 
+    .formbox {
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 80%;
+    height: 160vh;
+  }
+  .formbox p{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px){   
+    .formbox {
+        margin-left: 95px;
+        margin-top: 30px;
+        width: 80%;
+        height: 177vh;
+    }.formbox p{
+        font-size: 14px;
+      }
+}
+@media screen and (max-width: 650px){   
+    .formbox {
+        width: 70%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 550px){
+    .formbox {
+        width: 67%;
+        height: auto;
+    }
+    .formbox p{
+        font-size: 13px;
+      }
+}
+@media screen and (max-width: 450px){   
+    .formbox {
+       width: 100%;
+       height: auto;
+       margin-left: 0px;
+    }.formbox p{
+        font-size: 12px;
+      }
+}
+@media screen and (max-width: 250px){   
+    .formbox {
+       width: 100%;
+       height: auto;
+       margin-left: 0px;
+    }
+    .formbox p{
+       font-size: 12px;
+     }
+}
+
+
+
+
+
+
+

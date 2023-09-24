@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cambria';
+    font-style: oblique;
+    background: rgba(91, 194, 229, 0.457);
+}
+main{
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+header{
+    width: 100%;
+    height: 50vh;
+    background-image: url("asus-zenbook-duo-16x.jpg");
+    background-size: 50%;
+    border-radius: 20px 20px 20px 20px;
+}
+header p{
+    width: 100px;
+    height: 16px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-top: 201px;
+    position: relative;
+}
+header p h1{
+    width: 100px;
+    height: 16px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-top: 101px;
+    position: relative;
+    display: flex;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+header nav{
+    width: 95%;
+    height: 10%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav h4{
+  font-size: 2.7rem;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    color: #ffffff;
+}
+header nav ul li{
+   padding: 3px 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .3s linear;
+    margin-top: 6px;
+ }
+header nav ul li a:hover {
+    color: rgb(0, 200, 255);
+    font-weight: 900;
+}
+header p,h1{
+    color: rgb(9, 247, 247);
+}
+.page{
+    display: flex;
+    margin: auto;
+    HEIGHT: 147VH;
+}
+.page .box{
+    margin-right: 73px;
+}
+.page .box .Heading{
+    width: 100%;
+    margin-right: 30%;
+    background: #ffffff;
+}
+.page .box .Heading video{
+    width: 45%;
+    background: cover;
+    border-radius: 20px 20px 20px 20px;
+}
+.page .box .Heading h2{
+    font-weight: 800;
+    color: #000000;
+    margin-top: 30px;
+    text-align: center;
+}
+.page .box .Heading iframe{
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.page .box .Heading p{
+    font-size: larger;
+    color: #000000;
+    margin-top: 50px;
+}
+.page .box .Substraction{
+    width: 100%;
+    height: 34vh;
+    margin-top: 40px;
+    background:rgb(255, 255, 255);
+}
+.page .box .Substraction h2{
+    font-weight: 800;
+    color: #000000;
+    text-align: center;
+}
+.page .box .Substraction p{
+    font-size: larger;
+    color: #000000;
+    padding: 10px;
+}
+.page .sidebox{
+    margin-left: 20px;
+    height: 140vh;
+    width: 30%;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.page .sidebox h2{
+    color: rgb(105, 28, 28);
+}
+.page .sidebox  .ft{
+    margin-right: 10px;
+    height: 50vh;
+    margin-top: 40px;
+}
+.page .sidebox  .ft h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.page .sidebox  .ft h2{
+    margin-right: 20px;
+    margin-top: 40px;
+    color: rgb(105, 28, 28);
+}
+.page .sidebox  .ft ul{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: rgb(48, 171, 248);
+}
+.page .sidebox  .lt{
+    margin-right: 1px;
+    margin-top: 40px;
+}
+.page .sidebox  .lt h1{
+    margin-right: 2px;
+    color: rgb(0, 0, 0);
+}
+.page .sidebox  .lt ul{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: rgb(48, 171, 248);
+}
+.page .sidebox img{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.page .sidebox p{
+    font-size: 1rem;
+    margin: 10px;
+    color: white;
+}
+
+
+.article_Substraction{
+    width: 100%;
+    height: 35vh;
+    /*border: 1px solid #000;*/
+    margin-top: 40px;
+    
+}
+.article_Substraction h2{
+    font-weight: 800;
+    color: #892121;
+    text-align: center;
+}
+.article_Substraction p{
+    font-size: larger;
+    padding: 10px;
+    color: #ffffff;
+    width: 100%;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    /*border: 1px solid #000;*/
+    margin: auto;
+    background: rgb(108, 181, 162);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+}
+footer .dstbox , .imgbox{
+    position: relative;
+    width: 60%;
+    height: auto;
+   /* border: 1px solid black;*/
+}
+footer .dstbox h3{
+    color: rgb(9, 247, 247);
+    font-size: 2rem;
+    font-weight: 300;
+}
+footer .dstbox h1{
+    color: rgb(105, 28, 28);
+    font-size: 2rem;
+    font-weight: 300;
+}
+footer .dstbox p{
+   font-size: 13px;
+   color: azure;
+}
+footer .imgbox img{
+    width: 100%;
+    height: 185px;
+    border-radius: 5px;
+}
+
