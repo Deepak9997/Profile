@@ -1,5 +1,5 @@
 /*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=cursive:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
     margin: 0;
@@ -10,7 +10,10 @@
 html{
     scroll-behavior: smooth;
 }
-
+p{
+    color: #555;
+    font-weight: 800;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -36,11 +39,11 @@ section{
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+    font-family: cursive;
 }
 .about .about-content,
-.services .serv-content,
 .skills .skills-content,
+.projects .cardbox,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +74,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #245d61;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -120,7 +123,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #245d61;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -165,9 +168,9 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("IMG_20220904_130739_836.jpg") no-repeat right;
+    background: url("Screenshot (160).png" ) no-repeat right ;
     height: 100vh;
-    color: #ab2d2d;
+    color: #19666e;
     min-height: 500px;
     background-size: 350px;
     background-attachment: fixed;
@@ -176,6 +179,7 @@ section .title::after{
 .home .max-width{
   width: 100%;
   display: flex;
+  margin-right: 35%;
 }
 .home .max-width .row{
   margin-right: 0;
@@ -188,13 +192,19 @@ section .title::after{
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
+.home .home-content .text-3 a{
+    font-size: 30px;
+    margin: 20px 0;
+    padding-left: 12px;
+    padding-right: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: #245d61;
+    background-color: #ffffff;
 }
-.home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
+.home .home-content .text-3 a:hover{
+    color: #245d61;
+    background-color: #9690907f;
 }
 .home .home-content a{
     display: inline-block;
@@ -221,20 +231,31 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 409px;
+    height: 350px;
     width: 400px;
-    object-fit: cover;
+    object-fit: fill;
+    border: 2px solid black;
     border-radius: 20px;
 }
 .about .about-content .right{
     width: 55%;
+    display: flex;
 }
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
+.about .about-content .right .box1, .box2 {
+    margin-bottom: 10px;
+    width: 30%;
+    height: 20vh;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 20px;
+    overflow: unset;
+}
+.about .about-content .right .box1 .text, .text2{
+    font-size: 15px;
+    margin-left: 20px;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+.about .about-content .right .box span{
     color: crimson;
 }
 .about .about-content .right p{
@@ -242,19 +263,22 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: white;
+    color: #463939;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
+    border-radius: 20px;
+    border: 2px solid #326678;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
-    background: none;
+    color: rgb(255, 255, 255);
+    background: #326678;
+}
+.about .about-content p{
+    font-weight: bold;
 }
 
 /* services section styling */
@@ -290,19 +314,19 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: white;
+    color: #463939;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
+    border-radius: 20px;
+    border: 2px solid #326678;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
-    background: none;
+    color: rgb(255, 255, 255);
+    background: #326678;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -329,7 +353,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: rgb(28, 77, 80);
 }
 .skills-content .right .html::before{
     width: 70%;
@@ -344,23 +368,33 @@ section .title::after{
     width: 50%;
 }
 /* teams section styling */
+.Projects{
+    background: none;
+}
+.Projects .title{
+    color: #000000;
+}
 .Projects .title::after{
-    content: "support me";
+    content: "- support me -";
+    background: none;
 }
 .Projects .cardbox{
     display: flex;
     margin-left: 30px;
+    flex-wrap: wrap;
 }
 .Projects .cardbox .card{
     background: #fffefe;
-    border-radius: 6px;
-    padding: 30px 35px;
+    padding: 36px 8px;
     text-align: center;
     overflow: hidden;
+    margin: 0.1%;
+    border-radius: 20px;
+    border: 2px solid #326678;
     transition: all 0.3s ease;
 }
 .Projects .cardbox .card:hover{
-    background: crimson;
+    background: rgba(136, 137, 137, 0.402);
 }
 .Projects .cardbox .card .box{
     display: flex;
@@ -370,10 +404,10 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .Projects .cardbox .card .box a{
-    color: #fff;
+    color: #326678;
 }
 .Projects .cardbox .card .box a:hover{
-    color: #008cff;
+    color: #326678;
 }
 .Projects .cardbox .card:hover .box{
     transform: scale(1.05);
@@ -381,6 +415,7 @@ section .title::after{
 .Projects .cardbox .card .text{
     font-size: 25px;
     font-weight: 500;
+    color: brown;
     margin: 10px 0 7px 0;
 }
 .Projects .cardbox .card .text a{
@@ -391,9 +426,9 @@ section .title::after{
 .Projects .cardbox .card img{
     height: 120px;
     width: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 10px 10px;
-    border: 2px solid crimson;
+    object-fit: fill;
+    border-radius: 20px;
+    border: 2px solid rgb(26, 117, 129);
     transition: all 0.3s ease;
 }
 .Projects .cardbox .card:hover img{
@@ -429,7 +464,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #245d61;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -478,23 +513,41 @@ section .title::after{
   align-items: center;
 }
 .right form .button-area button{
-  color: #fff;
+  color: #000000;
   display: block;
   width: 160px!important;
   height: 45px;
   outline: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(32, 104, 121);
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: crimson;
-  background: none;
+  color: rgb(255, 255, 255);
+  background: rgb(32, 104, 121);
+}
+.right form .button-area a{
+    color: black;
+    border: 2px solid #245d61;
+    border-radius: 20px;
+    width: 180px!important;
+    text-align: center;
+    padding: 10px 3px;
+}
+.right form .button-area a:hover{
+    color: rgb(255, 255, 255);
+  background: rgb(32, 104, 121);
+}
+
+
+.right form .button-area a img{
+    width: 12%;
+    margin-left: 20px;
 }
 /* footer section styling */
 footer{
